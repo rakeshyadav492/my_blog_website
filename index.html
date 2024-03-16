@@ -1,0 +1,271 @@
+<html>
+
+<head>
+    <style>
+        /* CSS code for styling the website */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #123;
+            color: rgb(29, 140, 29);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            background-color: cadetblue;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .nav a:hover {
+            color: blue;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            margin: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .card a {
+            display: block;
+            text-align: right;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+
+            /* Responsive design for smaller screens */
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+         /* New code for adding subtopics for each topic when someone hovers over it */
+     
+     /* Use the position and display properties to create a hidden dropdown menu */
+     
+     /* .dropdown {
+       position:relative; 
+       display:inline-block; 
+     } */
+     
+     /* Use the visibility and opacity properties to show and hide the dropdown menu on hover */
+     
+     .dropdown-content {
+       position:absolute; 
+       display:none; 
+       background-color:#eee; 
+       padding:10px; 
+       border-radius:10px; 
+       box-shadow:2px 2px 5px rgba(0,0,0,0.1); 
+     }
+     
+     .dropdown:hover .dropdown-content {
+       display:block; 
+       visibility:visible; 
+       opacity:1; 
+     }
+     
+     /* Use the list-style and text-align properties to style the dropdown menu items */
+     
+     .dropdown-content ul {
+       list-style:none; 
+       margin-left:-40px; 
+       text-align:left; 
+     }
+     
+     /* Use the color and text-decoration properties to style the dropdown menu links */
+     
+     .dropdown-content a {
+       color:black; 
+       text-decoration:none; 
+     }
+     
+     .dropdown-content a:hover {
+       color:rgb(57, 51, 224); 
+     }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">My Blog</div>
+        <div class="tagline">A blog about each and everything</div>
+    </div>
+    <ul class="nav">
+        <div class="dropdown">
+            <a href="#">Home</a>
+        </div>
+        <div class="dropdown">
+            <a href="#">Personal Finance</a>
+            <!-- Use the dropdown-content class to create a hidden dropdown menu with subtopics -->
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">How to Save Money</a></li>
+                    <li><a href="#">How to Invest Wisely</a></li>
+                    <li><a href="#">How to Pay Off Debt</a></li>
+                    <li><a href="#">How to Achieve Financial Freedom</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Health and Wellness</a>
+            <!-- Use the dropdown-content class to create a hidden dropdown menu with subtopics -->
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Nutrition and Diet</a></li>
+                    <li><a href="#">Physical Fitness</a></li>
+                    <li><a href="#">Mental Health and Stress Management</a></li>
+                    <li><a href="#">Lifestyle and Wellness Habits</a></li>
+                    <li><a href="#">Weight Management</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Travel</a>
+            <!-- Use the dropdown-content class to create a hidden dropdown menu with subtopics -->
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">The Best Places to Visit in Europe in 2023</a></li>
+                    <li><a href="#">The Best Places to Visit in Asia in 2023</a></li>
+                    <li><a href="#">The Best Places to Visit in Africa in 2023</a></li>
+                    <li><a href="#">The Best Places to Visit in America in 2023</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Fashion</a>
+            <!-- Use the dropdown-content class to create a hidden dropdown menu with subtopics -->
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">The Latest Fashion Trends for Fall/Winter 2023</a></li>
+                    <li><a href="#">The Latest Fashion Trends for Spring/Summer 2023</a></li>
+                    <li><a href="#">The Best Fashion Tips and Tricks for Every Occasion</a></li>
+                    <li><a href="#">The Best Fashion Brands and Designers to Follow</a></li>
+                </ul>
+            </div>
+        </div>
+    </ul>
+    <div class="main">
+        <!-- Sample blog posts with images and links -->
+        <div class="card">
+            <img src="image/personal_finance.jpg" alt="Finance">
+            <h3>How to Save Money on a Tight Budget</h3>
+            <p>Do you want to save money but feel like you have no room in your budget? Here are some tips and tricks to
+                help you save more without sacrificing your quality of life.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="image/health.jpeg" alt="Health">
+            <h3>10 Easy Ways to Boost Your Immune System</h3>
+            <p>Your immune system is your body's defense against infections and diseases. Here are some simple and
+                natural ways to strengthen your immunity and stay healthy.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="image/travel place.jpeg" alt="Travel">
+            <h3>The Best Places to Visit in Europe in 2023</h3>
+            <p>Europe is a continent full of history, culture, and beauty. Here are some of the best destinations to
+                visit in Europe in 2023, whether you're looking for adventure, romance, or relaxation.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="image/latest fashion.jpeg" alt="Fashion">
+            <h3>The Latest Fashion Trends for Fall/Winter 2023</h3>
+            <p>Want to update your wardrobe for the upcoming season? Here are some of the latest fashion trends for
+                fall/winter 2023, from cozy knits to bold prints.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="image/amazing science.webp" alt="Science">
+            <h3>10 Amazing Science Facts You Probably Didn't Know</h3>
+            <p>Science is full of fascinating and surprising facts that can blow your mind. Here are some of the most
+                amazing science facts you probably didn't know, from the smallest to the largest.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="image/tech gadgets.jpeg" alt="Tech">
+            <h3>The Top 10 Tech Gadgets of 2023</h3>
+            <p>Technology is constantly evolving and improving, bringing us new and exciting gadgets every year. Here
+                are some of the top 10 tech gadgets of 2023, from smartwatches to drones.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 My Blog. All rights reserved.</p>
+        <p><a href="#" style="text-decoration: none; color: rgb(88, 139, 10);">Contact Us</a></p>
+    </div>
+
+
+</body>
+
+</html>
